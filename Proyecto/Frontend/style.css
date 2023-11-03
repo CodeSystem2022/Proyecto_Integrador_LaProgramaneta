@@ -1,43 +1,80 @@
-/* Estilo general */
+/* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f0f0f0;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #007bff;
+    background-color: #007BFF;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+section {
+    margin: 20px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
-footer {
-    background: #007bff;
-    color: #fff;
+.panel-solar {
     text-align: center;
+    margin: 20px;
     padding: 10px;
-    border-radius: 10px;
-}
-
-/* Resto del estilo CSS */
-
-/* Estilo del menú desplegable */
-#seleccionPanel {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.panel-solar img {
+    max-width: 100%;
+}
+
+.agregar-carrito {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.agregar-carrito:hover {
+    background-color: #0056b3;
+}
+/* Estilos específicos para cada sección (puedes personalizarlos) */
+
+#inicio {
+    background-color: #f0f0f0;
+}
+
+#catalogo {
+    background-color: #e5e5e5;
+}
+
+#contacto {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el footer */
+
+footer {
+    text-align: center;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
 }

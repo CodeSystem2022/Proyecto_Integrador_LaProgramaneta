@@ -1,217 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paneles Solares</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/Proyecto/Frontend/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Paneles Solares</title>
+    <link rel="stylesheet" href="/Proyecto/Frontend/style.css">
 </head>
-
 <body>
     <header>
-        <div class="paneles container">
-            <img class="logo-1" src="" alt="" />
-            <input type="checkbox" id="paneles" />
-            <label for="paneles">
-                <img src="" class="" alt="" />
-            </label>
-            <nav class="navbar">
-                <div class="panel-1">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
-                    </ul>
-                </div>
-                <img class="" src="" alt="" />
-                <div class="menu-2">
-                    <ul>
-                        <li><a href="#">Horario</a></li>
-                    </ul>
-                    <div class="socials">
-                        <a href="#">
-                            <div class="social">
-                                <img src="" alt="" />
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="" alt="" />
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="social">
-                                <img src="" alt="" />
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="header-content container">
+        <h1>Tu Tienda de Paneles Solares</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="swiper mySwiper-1">
-                <div class="swiper-wrapper">
+    <section id="inicio">
+        <h2>Bienvenido a Tu Tienda de Paneles Solares</h2>
+        <p>Explora nuestra selección de paneles solares de alta calidad y ahorra energía de manera sostenible.</p>
+    </section>
 
-                    <div class="swiper-slide">
-                        <div class="slaider">
-                            <div class="slider-text">
-                                <h1>Panel_1</h1>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facilis tempora
-                                    vitae mollitia nemo, accusantium magnam minima ad sapiente! Magni at similique harum
-                                    magnam, officia ratione consequuntur perspiciatis cumque! Veniam.r
-                                </p>
-                            </div>
-                            <div class="botones">
-                                <a href="#" class="btn_1">Comprar</a>
-                                <a href="#" class="btn_1">Menu</a>
-                            </div>
-                       </div>
-                       <div class="slider-img">
-                            <img src="" alt="">
-                       </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                </div>
-                <div class="swiper-slide">
-                </div>
-
-
-                <div class="swiper-slide">
-                    <div class="slaider">
-                        <div class="slider-text">
-                            <h1>Panel_2</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facilis tempora
-                                vitae mollitia nemo, accusantium magnam minima ad sapiente! Magni at similique harum
-                                magnam, officia ratione consequuntur perspiciatis cumque! Veniam.r
-                            </p>
-                        </div>
-                        <div class="botones">
-                            <a href="#" class="btn_1">Comprar</a>
-                            <a href="#" class="btn_1">Menu</a>
-                        </div>
-                   </div>
-                   <div class="slider-img">
-                        <img src="" alt="">
-                   </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="slaider">
-                    <div class="slider-text">
-                        <h1>Panel_3</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facilis tempora
-                            vitae mollitia nemo, accusantium magnam minima ad sapiente! Magni at similique harum
-                            magnam, officia ratione consequuntur perspiciatis cumque! Veniam.r
-                        </p>
-                    </div>
-                    <div class="botones">
-                        <a href="#" class="btn_1">Comprar</a>
-                        <a href="#" class="btn_1">Menu</a>
-                    </div>
-               </div>
-               <div class="slider-img">
-                    <img src="" alt="">
-               </div>
-            </div>
+    <section id="catalogo">
+        <h2>Catálogo de Paneles Solares</h2>
+        <div class="panel-solar">
+            <img src="panel1.jpg" alt="Panel Solar 1">
+            <h3>Panel Solar Modelo A</h3>
+            <p>Tipo: Monocristalino</p>
+            <p>Potencia: 350W</p>
+            <p>Precio: $300</p>
+            <button class="agregar-carrito">Agregar al Carrito</button>
         </div>
 
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+        <div class="panel-solar">
+            <img src="panel2.jpg" alt="Panel Solar 2">
+            <h3>Panel Solar Modelo B</h3>
+            <p>Tipo: Policristalino</p>
+            <p>Potencia: 400W</p>
+            <p>Precio: $270</p>
+            <button class="agregar-carrito">Agregar al Carrito</button>
         </div>
-    </div>
-</header>
+        <!-- Agrega más paneles solares aquí -->
+    </section>
 
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? Contáctanos:</p>
+        <ul>
+            <li>Correo Electrónico: info@tu-tienda-de-paneles.com</li>
+            <li>Teléfono: +1-555-123-4567</li>
+        </ul>
+    </section>
 
-<main class="products">
-    <div class="tabs container">
+    <footer>
+        <p>&copy; 2023 Tu Tienda de Paneles Solares</p>
+    </footer>
 
-        <input type="radio" name="tabs" id="tab1" checked="cheked" class="tabInput" value="1">
-        <label for="tab1">paneles</label>
-        <div class="tab">
-            <div class="swiper-mySwiper-2" id="swiper1">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="products">
-                            <div class="product-img">
-                                <h4>PanelA</h4>  
-                                <img src="" alt="">                             </div>
-                        </div>
-                        <div class="products">
-                            <div class="product-txt">
-                                <h4>Producto</h4>  
-                                <p>calidad</p>
-                                <span class="price" >$10000</span>                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="products">
-                        <div class="product-img">
-                            <h4>PanelB</h4>  
-                            <img src="" alt="">                             </div>
-                    </div>
-                    <div class="products">
-                        <div class="product-txt">
-                            <h4>Producto</h4>  
-                            <p>calidad</p>
-                            <span class="price" >$10000</span>                             </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="products">
-                    <div class="product-img">
-                        <h4>PanelC</h4>  
-                        <img src="" alt="">                             </div>
-                </div>
-                <div class="products">
-                    <div class="product-txt">
-                        <h4>Producto</h4>  
-                        <p>calidad</p>
-                        <span class="price" >$10000</span>                             </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="swiper-slide">
-            <div class="products">
-                <div class="product-img">
-                    <h4>PanelD</h4>  
-                    <img src="" alt="">                             </div>
-            </div>
-            <div class="products">
-                <div class="product-txt">
-                    <h4>Producto</h4>  
-                    <p>calidad</p>
-                    <span class="price" >$10000</span>                             </div>
-            </div>
-            <div class="swiper-buton-next"></div>
-            <div class="swiper-button-prev"></div>
-            //aca quede
-        </div>
-    </div>
-
-            </div>
-        </div>
-    </div>
-
-</main>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="/Proyecto/Frontend/script.js"></script>
 </body>
-
 </html>

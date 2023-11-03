@@ -1,0 +1,15 @@
+{
+  "name": "proyecto_integrador_laprogramaneta",
+  "version": "1.0.0",
+  "description": "Grupo **La Programaneta** de la **UTN FRSR** San Rafael.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-promise": "^1.0.5"
+  }
+}
