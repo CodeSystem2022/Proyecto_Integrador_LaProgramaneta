@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #00c3ff;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para dispositivos de mayor tamaño (como tablet o escritorio) */
+@media screen and (min-width: 769px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        display: flex;
+        align-items: center; /* Centra verticalmente los elementos */
+    }
+
+    #main-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Muestra las solapas en fila */
+    }
+
+    #main-nav ul li {
+        margin-right: 20px;
+        position: relative; /* Agrega posición relativa a los elementos li */
+    }
+
+    #main-nav ul li:last-child {
+        margin-right: 0; /* Elimina el margen derecho del último elemento */
+    }
+
+    #main-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    #main-nav ul li a:hover {
+        color: #006779;
+    }
+
+    /* Oculta inicialmente las sub-solapas */
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #00c3ff;
+        padding: 10px;
+        box-shadow: 5px 3px 6px #09ff00;        
+    }
+
+    /* Muestra las sub-solapas una debajo de la otra cuando se hace hover en la solapa principal */
+    #main-nav ul li:hover .submenu {
+        display: block;
+    }
+
+    /* Ajusta el estilo para mostrar las sub-solapas en columna */
+    #main-nav ul li:hover .submenu li {
+        display: block;
+        margin-right: 0;
+    }
+
+    /* Oculta las sub-solapas cuando no se hace hover en la solapa principal */
+    #main-nav ul li:not(:hover) .submenu {
+        display: none;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #main-nav {
+        display: none;
+    }
+    #menu-toggle {
+        display: block;
+        background-color: #00c3ff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    #menu-toggle.active + #main-nav {
+        display: block;
+    }
+    /* Estilos para el menú desplegable */
+    #main-nav ul {
+        background-color: #00c3ff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+    #main-nav ul li {
+        padding: 10px;
+    }
+    #main-nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+    }
+    /* Estilo para el icono de menú activo */
+    #menu-toggle.active {
+        background-color: #00c3ff;
+        box-shadow: 0 4px 6px #00ccff;
+    }
+    /* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00c3ff;
+    padding: 10px;
+    box-shadow: 0 4px 6px #00c3ff;
+}
+.dropdown:hover .submenu {
+    display: block;
+}
+}
