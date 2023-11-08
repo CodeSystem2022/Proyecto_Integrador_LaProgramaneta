@@ -4,16 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        const campo1 = document.getElementById("campo1").value;
-        const campo2 = document.getElementById("campo2").value;
+        const nombre = document.getElementById("nombre").value;
+        const contraseña = document.getElementById("contraseña").value;
+        const correo = document.getElementById("correo").value;
 
-        // Realiza una solicitud AJAX al servidor
-        fetch("/guardar_datos", {
+        // Realiza una solicitud AJAX al servidor para agregar un usuario
+        fetch("/agregar_usuario", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ campo1, campo2 }),
+            body: JSON.stringify({ nombre, contraseña, correo }),
         })
             .then((response) => response.json())
             .then((data) => {

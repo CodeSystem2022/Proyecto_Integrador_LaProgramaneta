@@ -2,19 +2,33 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const pgp = require("pg-promise")();
-const db = pgp("postgres://nombre_de_usuario:contraseña@localhost:5432/nombre_de_la_base_de_datos");
+const db = pgp("postgres://postgres:admin@localhost:5432/pagina");
 
 app.use(bodyParser.json());
 
+// Ruta para agregar un nuevo usuario
 app.post("/guardar_datos", (req, res) => {
-    const { campo1, campo2 } = req.body;
+    const { nombre, contraseña, correo } = req.body;
 
-    db.none("INSERT INTO nombre_de_la_tabla (campo1, campo2) VALUES ($1, $2)", [campo1, campo2])
+    db.none("INSERT INTO usuarios (nombre, contraseña, correo) VALUES ($1, $2, $3)", [nombre, contraseña, correo])
         .then(() => {
-            res.json({ mensaje: "Datos guardados exitosamente" });
+            res.json({ mensaje: "Usuario guardado exitosamente" });
         })
         .catch((error) => {
-            res.status(500).json({ error: "Hubo un error al guardar los datos" });
+            res.status(500).json({ error: "Hubo un error al guardar el usuario" });
+        });
+});
+
+// Ruta para agregar un nuevo panel
+app.post("/agregar_panel", (req, res) => {
+    const { nombre, tipo, potencia, precio } = req.body;
+
+    db.none("INSERT INTO paneles (nombre, tipo, potencia, precio) VALUES ($1, $2, $3, $4)", [nombre, tipo, potencia, precio])
+        .then(() => {
+            res.json({ mensaje: "Panel agregado exitosamente" });
+        })
+        .catch((error) => {
+            res.status(500).json({ error: "Hubo un error al agregar el panel" });
         });
 });
 
