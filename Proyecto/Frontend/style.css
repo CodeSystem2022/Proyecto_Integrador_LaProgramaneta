@@ -1,80 +1,145 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-}
+    /* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh; /* Mínimo 100% del viewport height */
+        display: flex;
+        flex-direction: column;
+    }
 
-header {
-    background-color: #007BFF;
+
+    header {
+        background-color: #007BFF;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 15px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .panel-solar {
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .panel-solar img {
+        max-width: 100%;
+    }
+
+    .agregar-carrito {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .agregar-carrito:hover {
+        background-color: #0056b3;
+    }
+    /* Estilos específicos para cada sección (puedes personalizarlos) */
+
+    #inicio {
+        background-color: #f0f0f0;
+    }
+
+    #catalogo {
+        background-color: #e5e5e5;
+    }
+
+    #contacto {
+        background-color: #f0f0f0;
+    }
+
+    /* Estilos para el footer */
+
+
+    #catalogo h2{
+        text-align: center;
+    }
+
+    .float {
+        position: fixed;
+        width: 32px;
+        height: 32px;
+        bottom: 16px;
+        right: 16px;
+        background-color: #09ce13;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 22px;
+        box-shadow: 2px 2px 3px #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+ .pie-pagina{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+ }
+ 
+ .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 90px;
+    padding: 45px 20px;
     color: #fff;
-    text-align: center;
-    padding: 20px;
-}
+ }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav li {
-    margin: 0 15px;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.panel-solar {
-    text-align: center;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.panel-solar img {
-    max-width: 100%;
-}
-
-.agregar-carrito {
-    background-color: #007BFF;
+ .pie-pagina .grupo1 .box{
+    color: #fff;    
+    width: 100%;
+    
+ }
+ 
+ .pie-pagina .grupo-1 .redes a{
+    display: inline-block;
+    text-decoration: none;
     color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+    width: 35px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+  
+    transition: all 300ms ease;
+
+    
+ }
+ .pie-pagina .grupo-1 .redes a:hover{
+    color: #605d5d;
 }
-
-.agregar-carrito:hover {
-    background-color: #0056b3;
-}
-/* Estilos específicos para cada sección (puedes personalizarlos) */
-
-#inicio {
-    background-color: #f0f0f0;
-}
-
-#catalogo {
-    background-color: #e5e5e5;
-}
-
-#contacto {
-    background-color: #f0f0f0;
-}
-
-/* Estilos para el footer */
-
-footer {
-    text-align: center;
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px;
+.pie-pagina .grupo-1 .redes{
+width: 500px; /* Ajusta el ancho según tus preferencias */
+height: 50px; /* Ajusta el alto según tus preferencias */
+text-align: right;
+font-size: 22px;
 }
