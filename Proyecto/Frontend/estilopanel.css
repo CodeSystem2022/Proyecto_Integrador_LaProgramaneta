@@ -1,0 +1,53 @@
+body {
+    margin: 15;
+    padding: 10;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.imagen-panel {
+    width: 15%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    background-color: #007BFF; /* Cambia el color de fondo según tus preferencias */
+    padding: 10px; /* Añade un relleno para separar la imagen del fondo */
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.info{
+    flex: 1;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    background-color: #686868b4; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px; /* Añade un relleno para un mejor aspecto */
+    margin: 100px; /* Ajusta el margen según sea necesario */
+}
+.datos {
+    flex: 1;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    background-color: #686868b4; /* Cambia el color de fondo según tus preferencias */
+    padding: 20px; /* Añade un relleno para un mejor aspecto */
+    margin: 100px; /* Ajusta el margen según sea necesario */
+    
+}
+
+
+.datos li {
+    margin-bottom: 8px; /* Ajusta la distancia entre elementos de la lista */
+    list-style-position: inside; /* Ajusta la posición de los puntos */
+    margin: 0; /* Elimina el margen para que los puntos estén más cerca del texto */
+}
