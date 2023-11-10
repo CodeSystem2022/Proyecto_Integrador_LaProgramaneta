@@ -1,18 +1,58 @@
-    /* Estilos generales */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5;
-        margin: 0;
-        padding: 0;
-        min-height: 100vh; /* Mínimo 100% del viewport height */
-        display: flex;
-        flex-direction: column;
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 50;
+    transition: background-color 0.5s ease;
+  }
+  
+  .fondo-inicial {
+    background-color: #000000; 
+    padding: 80px;/* Color gris sólido al inicio */
+  }
+  
+  .fondo-scroll {
+    background-color: hsla(0, 0%, 28%, 0.5); /* Color gris con 50% de opacidad al desplazarse */
+  }
+  
+  /* Agrega más estilos según sea necesario */
+  
+    .top {
+        background-color: hsla(0, 0%, 46%, 0.5); /* Color gris con 50% de opacidad */
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding: 30px 0px;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
     }
+     .top a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 2em;
+        line-height: 70px;
+        display: block;
+        font-family: 'Exo 2', sans-serif;
+     }
 
 
+    /* foto de Logo*/
+    .logo img {
+        width: auto;
+        max-width:225px;
+        height: auto;
+        position: fixed;
+        bottom: 760px; 
+        left: 5%; 
+    }
     header {
-        background-color: #007BFF;
-        color: #fff;
+        background-color: #ffffff;
+        color: #ffffff;
         text-align: center;
         padding: 20px;
     }
