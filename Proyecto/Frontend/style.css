@@ -153,13 +153,17 @@
     /*Inicio y catalogo del pie de pagina*/
     .pie-pagina .explora a{
         text-decoration: none;
-        color: #fff;
-        margin-left: 110px;
+        color: #717171;
+        margin-left: 128px;
         display: flex;
         flex-direction: column; /* Alinea los elementos verticalmente */
         line-height: 1.5;        
         font-size: 14px;
+        transition: all 300ms ease;
+        
     }
+
+
     /*Titulo sobre-nosotros pipe de pagina*/
     .pie-pagina .grupo-1 .box .sobre-nosotros{
         width: 350px;
@@ -169,6 +173,7 @@
     /*Ajustando el interlineado de la descripcion del pie de pagina*/
     .sobre-nosotros p {
         line-height: 2; 
+        color: #717171;
     }
     /*Parte del final del footer*/
     .pie-pagina .grupo-2{
@@ -180,7 +185,9 @@
         font-size: 12px;
     }
 
-
+    .pie-pagina .explora a:hover{
+        color: #fff;
+    }
 
 
 /* PANELES SOLARES*/
