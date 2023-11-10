@@ -62,18 +62,7 @@
     }
     /* Estilos específicos para cada sección (puedes personalizarlos) */
 
-    #inicio {
-        background-color: #f0f0f0;
-    }
-
-    #catalogo {
-        background-color: #e5e5e5;
-    }
-
-    #contacto {
-        background-color: #f0f0f0;
-    }
-
+  
     /* Estilos para el footer */
 
 
@@ -81,6 +70,10 @@
         text-align: center;
     }
 
+
+
+    /* PIE DE PAGINA (FOOTER) */
+    /*Ajustando el icono de whatsapp de la pagina*/
     .float {
         position: fixed;
         width: 32px;
@@ -98,74 +91,91 @@
         justify-content: center;
         text-decoration: none;
     }
-    
- .pie-pagina{
-    width: 100%;
-    background-color: rgb(20, 20, 20);
- }
- 
- .pie-pagina .grupo-1{
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 45px 20px;
-    color: #fff;
- }
- .pie-pagina .grupo-1  figure img {
-    width: 100%; /* Ajusta el ancho al 100% del contenedor (figure) */
-    margin-left: 0; 
-    height: auto; /* Mantiene la proporción original de la imagen ajustando automáticamente la altura */
-}
-.pie-pagina .grupo-1  figure{
-    margin-left: 0;
-}
- .pie-pagina .grupo1 .box{
-    color: #fff;    
-    width: 80%;
-    text-align: center;
- }
-
- .pie-pagina .grupo1 h2{
- text-align: center;
-} 
- .pie-pagina .grupo-1 .redes a{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    width: 35px;
-    height: 45px;
-    line-height: 45px;
-    margin-right: 10px;
-  
-    transition: all 300ms ease;
-
-    
- }
- .pie-pagina .grupo-1 .redes a:hover{
-    color: #605d5d;
-}
-.pie-pagina .grupo-1 .redes{
-
-height: 50px; /* Ajusta el alto según tus preferencias */
-text-align: right;
-font-size: 22px;
-}
-
-
-.pie-pagina .grupo-1 .box .sobre-nosotros{
-width: 350px;
-text-align: center;
-font-size: 15px;
-
-}
-.pie-pagina .grupo-2{
-background-color: rgb(20, 20, 20);
-padding: 15px 10px;
-text-align: center;
-color: #fff;
-border-top: 1px solid rgb(27, 27, 33);
-font-size: 12px;
-}   
+    /*Pie de pagina*/
+    .pie-pagina{
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+    }
+    /*Separando en columnas y ajustando los contenedores del grupo 1*/
+    .pie-pagina .grupo-1{
+        width: 100%;
+        max-width: 1400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 45px 20px;
+        color: #fff;
+    }
+    /*Logotipo LAPROGRAMANETA PIE DE PAGINA*/
+    .pie-pagina .grupo-1  figure img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor (figure) */
+        margin-left: 0; 
+        height: auto; /* Mantiene la proporción original de la imagen ajustando automáticamente la altura */
+    }
+    /*Logotipo LAPROGRAMANETA PIE DE PAGINA*/
+    .pie-pagina .grupo-1  figure{
+        margin-left: 0;
+    }
+    /*Dando color-proporcion-alineacion a los elementos del grupo 1 de todos los box*/
+    .pie-pagina .grupo1 .box{
+        color: #fff;    
+        width: 80%;
+        text-align: center;
+    }
+   
+    /*Logos de las redes*/
+    .pie-pagina .grupo-1 .redes a{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        width: 35px;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 10px;
+        transition: all 300ms ease;
+    }
+    /*Animacion del cursor sobre los logos*/
+    .pie-pagina .grupo-1 .redes a:hover{
+        color: #605d5d;
+    }
+    /*Logos de las redes*/
+    .pie-pagina .grupo-1 .redes{
+        height: 50px; /* Ajusta el alto según tus preferencias */
+        text-align: right;
+        font-size: 22px;
+    }
+    /*Titulo EXPLORA pie de pagina*/
+    .pie-pagina  h2 {
+        text-align: center;
+        font-size: 16px;
+    }
+    /*Inicio y catalogo del pie de pagina*/
+    .pie-pagina .explora a{
+        text-decoration: none;
+        color: #fff;
+        margin-left: 110px;
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        line-height: 1.5;        
+        font-size: 14px;
+    }
+    /*Titulo sobre-nosotros pipe de pagina*/
+    .pie-pagina .grupo-1 .box .sobre-nosotros{
+        width: 350px;
+        text-align: left;
+        font-size: 14px;
+    }
+    /*Ajustando el interlineado de la descripcion del pie de pagina*/
+    .sobre-nosotros p {
+        line-height: 2; 
+    }
+    /*Parte del final del footer*/
+    .pie-pagina .grupo-2{
+        background-color: rgb(20, 20, 20);
+        padding: 15px 10px;
+        text-align: center;
+        color: #fff;
+        border-top: 1px solid rgb(27, 27, 33);
+        font-size: 12px;
+    }
