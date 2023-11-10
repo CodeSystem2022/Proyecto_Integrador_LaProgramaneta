@@ -179,3 +179,67 @@
         border-top: 1px solid rgb(27, 27, 33);
         font-size: 12px;
     }
+
+
+
+
+/* PANELES SOLARES*/
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    
+}
+
+.panel-solar{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.panel-solar:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.panel-solar img{
+    width: 78%;
+    height: 250px;
+}
+
+.panel-solar .contenido {
+    padding: 15px;
+    text-align: center0
+    ;
+}
+
+.panel-solar .contenido p{
+line-height: 1.5;
+columns: #6a6a6a;
+}
+
+.panel-solar .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.panel-solar .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transform: all 400ms ease;
+}
+
+.panel-solar .contenido a:hover{
+    background-color: #2fb4cc;
+    color: #fff;
+}
