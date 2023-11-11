@@ -2,7 +2,17 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const pgp = require("pg-promise")();
-const db = pgp("postgres://postgres:admin@localhost:5432/pagina");
+
+// Configuración de la conexión a la base de datos
+const dbConfig = {
+    host: "localhost",
+    port: 5432,
+    database: "pagina",
+    user: "postgres",
+    password: "admin",
+};
+
+const db = pgp(dbConfig);
 
 app.use(bodyParser.json());
 
