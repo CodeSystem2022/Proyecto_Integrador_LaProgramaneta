@@ -30,7 +30,6 @@
 
     section {
         margin: 20px;
-        padding: 10px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
@@ -98,18 +97,17 @@
     }
     /*Separando en columnas y ajustando los contenedores del grupo 1*/
     .pie-pagina .grupo-1{
-        width: 100%;
-        max-width: 1400px;
+        width: 89%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
-        padding: 45px 20px;
+        padding: 25px;
         color: #fff;
     }
     /*Logotipo LAPROGRAMANETA PIE DE PAGINA*/
     .pie-pagina .grupo-1  figure img {
-        width: 100%; /* Ajusta el ancho al 100% del contenedor (figure) */
+        width: 50%; /* Ajusta el ancho al 100% del contenedor (figure) */
         margin-left: 0; 
         height: auto; /* Mantiene la proporción original de la imagen ajustando automáticamente la altura */
     }
@@ -153,26 +151,14 @@
     /*Inicio y catalogo del pie de pagina*/
     .pie-pagina .explora a{
         text-decoration: none;
-<<<<<<< HEAD
-        color: #979797;
-        margin-left: 110px;
-=======
         color: #717171;
         margin-left: 128px;
->>>>>>> 1
         display: flex;
         flex-direction: column; /* Alinea los elementos verticalmente */
         line-height: 1.5;        
         font-size: 14px;
         transition: all 300ms ease;
-<<<<<<< HEAD
-    }
-    /*Animacion cursor sobre inicio y catalogo*/
-    .pie-pagina .explora a:hover{
-        color: #fff;
-=======
         
->>>>>>> 1
     }
 
 
@@ -185,11 +171,7 @@
     /*Ajustando el interlineado de la descripcion del pie de pagina*/
     .sobre-nosotros p {
         line-height: 2; 
-<<<<<<< HEAD
-        color:#979797;
-=======
         color: #717171;
->>>>>>> 1
     }
     /*Parte del final del footer*/
     .pie-pagina .grupo-2{
@@ -237,7 +219,7 @@
 
 .panel-solar .contenido {
     padding: 15px;
-    text-align: center0
+    text-align: center
     ;
 }
 
@@ -265,4 +247,60 @@ columns: #6a6a6a;
 .panel-solar .contenido a:hover{
     background-color: #2fb4cc;
     color: #fff;
+}
+
+/* VENTAJAS*/
+.contenedor{
+    width: 100%;
+    max-width: 100%;
+    height: 600px;
+    display: flex;
+    max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
+}
+
+.ventajas{
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
+}
+
+.ventajas .contenidos p{
+    line-height: 1.5;
+    color: #9e9e9e;
+    padding-left: 30px;
+    padding-right: 30px
+
+
+}
+
+.ventaja{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.ventajas .contenidos h3{
+    color: #fff;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.ventajas img{
+    margin: 40px 130px;
+    max-width: 25%;
+}
+
+.ventajas-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.foquwu {
+    margin-bottom: -15px !important;
 }
