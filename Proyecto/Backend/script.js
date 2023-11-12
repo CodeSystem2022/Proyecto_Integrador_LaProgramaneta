@@ -1,3 +1,5 @@
+const db = require("./db");
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("miFormulario");
 
