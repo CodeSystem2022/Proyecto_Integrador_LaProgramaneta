@@ -11,8 +11,8 @@
 
 
     header {
-        background-color: #007BFF;
-        color: #fff;
+        background-color: #ffffff;
+        color: rgb(0, 68, 255);
         text-align: center;
         padding: 20px;
     }
@@ -153,26 +153,25 @@
     /*Inicio y catalogo del pie de pagina*/
     .pie-pagina .explora a{
         text-decoration: none;
-<<<<<<< HEAD
+
         color: #979797;
         margin-left: 110px;
-=======
+
         color: #717171;
         margin-left: 128px;
->>>>>>> 1
+
         display: flex;
         flex-direction: column; /* Alinea los elementos verticalmente */
         line-height: 1.5;        
         font-size: 14px;
         transition: all 300ms ease;
-<<<<<<< HEAD
+
     }
     /*Animacion cursor sobre inicio y catalogo*/
     .pie-pagina .explora a:hover{
         color: #fff;
-=======
+
         
->>>>>>> 1
     }
 
 
@@ -185,11 +184,11 @@
     /*Ajustando el interlineado de la descripcion del pie de pagina*/
     .sobre-nosotros p {
         line-height: 2; 
-<<<<<<< HEAD
+
         color:#979797;
-=======
+
         color: #717171;
->>>>>>> 1
+
     }
     /*Parte del final del footer*/
     .pie-pagina .grupo-2{
