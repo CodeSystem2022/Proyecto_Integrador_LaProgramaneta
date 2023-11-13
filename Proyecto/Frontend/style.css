@@ -19,10 +19,9 @@
         text-align: center;
     }
 
-    
     .fondo-inicial {
         background-color: #000000; 
-        padding: 65px;
+        padding: 55px;
       }
       
     .fondo-scroll {
@@ -37,8 +36,11 @@
             position: fixed;
             top: 0px;
             left: 0px;
-            padding: 55px;
+            padding: 45px;
             z-index: 1000;
+            display: flex;
+            justify-content: center; /*cemtra horinzontalmente*/
+            align-items: center; /*centra verticalmente*/
           
     }
     .top a {
