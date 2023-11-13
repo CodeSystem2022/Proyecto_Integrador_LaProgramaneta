@@ -1,36 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="stylesA.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	</head>
+	<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel solar MM8</title>
-    <link rel="stylesheet" href="/Proyecto/Frontend/estilopanel.css">
-    <meta name="robots" content="index, follow">
-</head>
+        <header class ="fondo-inicial">
+            <nav>
+                <div class="top">
+                    <div class="logo">
+                        <img src="/Proyecto/Frontend/Imagenes/panelsolar.png" alt="">
+                    </div>
+                    <ul>
+                        <a href="/Proyecto/Frontend/index.html">Inicio</a>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+        <script src="/Proyecto/Backend/scriptM.jsx"></script>
 
-<body>
-    <header>
-        <div class="container">
-            <img class="imagen-panel" src="/Proyecto/Frontend/Imagenes/P2.png">
-            <div class="text-container">
-                <p class="info">Panel solar es un modelo MM8. <br> Tiene una protección de trabajo de IP32, su temperatura adecuada para
+		<div class="container-title">
+            <h2>Panel Solar MM8</h2>
+        </div>
+
+		<main>
+			<div class="container-img">
+				<img
+					src="/Proyecto/Frontend/Imagenes/P2.png"
+					alt="imagen-producto"
+				/>
+			</div>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$719.033</span>
+					<i class="fa-solid fa-angle-right"></i>
+				</div>
+
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							min="1"
+							class="input-quantity"
+						/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i>
+							<i class="fa-solid fa-chevron-down" id="decrement"></i>
+						</div>
+					</div>
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+                            Panel solar es un modelo MM8. <br> Tiene una protección de trabajo de IP32, su temperatura adecuada para
                     trabajar es de entre los -20°C a 55°C. <br> Posee un cooler contra sobretemperatura automático según la temperatura y carga.
                     <br> Este equipo es apto para todo tipo de baterias: AGM / GEL / Acido Liquido
+						</p>
+					</div>
+				</div>
 
-                </p>
-                <ul class="datos">
-                    <li>Datos de rendimiento</li>
-                    <li>Tipo de celda: Policristalino</li>
-                    <li>Capacidad: 7 KWh</li>
-                    <li>Potencia maxima: 160W</li>
-                    <li>Voltage: 22.0V</li>
-                    <li>Generación promedio: 1600w diarios</li>
-                    <li>Almacenado en baterías: 1200w</li>
-                </ul>
-            </div>
-        </div>
-    </header>
-</body>
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Información adicional</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information">
+                        <li>Datos de rendimiento</li>
+                        <li>Tipo de celda: Policristalino</li>
+                        <li>Capacidad: 7 KWh</li>
+                        <li>Potencia maxima: 160W</li>
+                        <li>Voltage: 22.0V</li>
+                        <li>Generación promedio: 1600w diarios</li>
+                        <li>Almacenado en baterías: 1200w</li>
+					</div>
+				</div>
 
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/Proyecto/Backend/indexM.js"></script>
+	</body>
 </html>
