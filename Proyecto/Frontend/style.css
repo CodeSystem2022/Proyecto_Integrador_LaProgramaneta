@@ -94,6 +94,7 @@
     }
     .col-md-5 {
         height: 100%; /* Puedes ajustar el valor según tus necesidades */
+     
     }
 
     .containers{
@@ -104,6 +105,8 @@
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
+        margin: -5% 20%;
+        text-align: left;
     }
 
     .amarillo {
