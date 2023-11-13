@@ -1,4 +1,4 @@
-    /* Estilos generales */
+    /* Estilos generales de la pagina */
     body {
         font-family: Arial, Helvetica, sans-serif, sans-serif;
         background-color: #f5f5f5;
@@ -9,7 +9,7 @@
         flex-direction: column;
     }
 
-    /* ENCABEZADO */
+    /* ENCABEZADO DE LA PAGINA */
 
     header {
         color: #fff;
@@ -29,7 +29,8 @@
     .fondo-scroll {
         background-color: black;    
     }
-   
+
+    /* Estilo para la barra superior fija (top) */
     .top {
         background-color: hsla(0, 0%, 5%, 0.5);
         height: 20px;
@@ -43,6 +44,7 @@
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
     }
+    /* Estilo para los enlaces dentro de la barra superior */
     .top a {
         text-decoration: none;
         color: #ffffff;
@@ -52,26 +54,28 @@
         font-family: 'Montserrat', sans-serif;
         transition: all 300ms;
     }
-    
+
+    /* Estilo al pasar el cursor sobre los enlaces */
     .top a:hover {
        color: #FDD835;;
-}
+    }
     
-        /* foto de Logo*/
-        .logo img {
-            width: 7%;
-            height: auto;
-            position: fixed;
-            left: 8%;
-            top: -1%;
-        }
+    /* Estilo para la imagen del logo */
+    .logo img {
+        width: 7%;
+        height: auto;
+        position: fixed;
+        left: 8%;
+        top: -1%;
+    }
         
-    /* IMAGEN DE FONDO */
-
+    /* IMAGEN DE FONDO INICIO DE PAGINA */
+    /* Estilo para el encabezado y párrafos dentro de containers */
     .containers h1,p{
         color: #fff;
         margin-bottom: 20px
     }
+    /* Estilo para la sección con ID "inicio" y sus filas */
     #inicio .row {
         background-image: url(/Proyecto/Frontend/Imagenes/header.png);
         background-size: cover;
@@ -83,6 +87,7 @@
         
     }
 
+    /* Estilo de las filas */
     .row {
         display: -ms-flexbox;
         display: flex;
@@ -92,15 +97,16 @@
         margin-left: -15px;
         height: 30%;
     }
+    /* Estilo de las columnas de ancho medio (col-md-5) */
     .col-md-5 {
-        height: 100%; /* Puedes ajustar el valor según tus necesidades */
+        height: 100%; 
      
     }
-
+    /* Estilo de los contenedores */
     .containers{
         max-width: auto;
     }
-
+    /* Estilo para columnas con clase col-md-5 */
     .col-md-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
@@ -108,30 +114,27 @@
         margin: -5% 20%;
         text-align: left;
     }
-
+    /* Estilo para elementos con clase amarillo */
     .amarillo {
         color: #FCEC2A;
     }
-    
+    /* Estilo para elementos con clase p24 */
     .p24 {
         font-size: 24px !important;
     }
+    /* Estilo para elementos con clase p300 */
     .p300 {
         font-weight: 300 !important;
     }
+    /* Estilo para elementos con clase roboto */
     .roboto {
         font-family: 'Roboto Condensed', sans-serif !important;
     }
+    /* Estilo para elementos con clase p92 */
     .p92 {
         font-size: 50px !important;
     }
-    
-    .p300 {
-        font-weight: 200 !important;
-    }
-    .roboto {
-        font-family: 'Roboto Condensed', sans-serif !important;
-    }
+    /* Estilo para párrafos */
     p {
         display: block;
         margin-block-start: 1em;
@@ -139,21 +142,22 @@
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
-
+    /* Estilo para elementos con clase p16 */
     .p16 {
         font-size: 16px !important;
     }
-
+    /* Estilo para la lista no ordenada dentro de la etiqueta nav */
     nav ul {
         list-style: none;
         padding: 0;
         display: flex;
         justify-content: center;
     }
-
+    /* Estilo para los elementos de lista dentro de la etiqueta nav */
     nav li {
         margin: 0 15px;
     }
+    /* Estilo específico para el elemento con ID "inicio" dentro de la clase "nav" */
     .nav #inicio {
         margin: 20px;
         background-color: #fff;
@@ -162,6 +166,7 @@
         padding: 20px;
         text-align: center;
     }
+    /* Estilo para el pseudo-elemento "before" del elemento con ID "inicio" */
     #inicio::before {
         content: '';
         position: absolute;
@@ -173,14 +178,14 @@
         border-radius: 20px; /* Puedes ajustar este valor para redondear más o menos las esquinas */
         z-index: -1;
     }
-    
+    /* Estilo para los elementos h2 y p dentro del elemento con ID "inicio" */
     #inicio > h2, #inicio > p {
         position: relative;
         z-index: 1;
         text-align: center;
     }
 
-    
+    /* Estilo para elementos con clase "menu" dentro de elementos con clase "section" */
     .section  .menu{
         margin: 20px;
         background-color: #fff;
@@ -188,7 +193,7 @@
        
         
     }
-
+    /* Estilo para elementos con clase "panel-solar" */
     .panel-solar {
         text-align: center;
         margin: 20px;
@@ -196,11 +201,11 @@
         border: 1px solid #ccc;
         border-radius: 5px;
     }
-
+    /* Estilo para imágenes dentro de elementos con clase "panel-solar" */
     .panel-solar img {
         max-width: 100%;
     }
-
+    /* Estilo para elementos con clase "agregar-carrito" */
     .agregar-carrito {
         background-color: #007BFF;
         color: #fff;
@@ -210,7 +215,7 @@
         cursor: pointer;
         margin-top: 10px;
     }
-
+    /* Estilo al pasar el ratón sobre elementos con clase "agregar-carrito" */
     .agregar-carrito:hover {
         background-color: #0056b3;
     }
@@ -222,6 +227,7 @@
         color: #ffffff; /* Cambié el color a azul, ajusta según tu preferencia */
         animation: neon-glow 1.5s ease-in-out infinite alternate;
     }
+    /* Animación de resplandor de neón utilizando keyframes */
     @keyframes neon-glow {
         from {
             text-shadow: 0 0 5px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.8);
@@ -231,7 +237,7 @@
         }
     }
     
-    
+    /* Estilo para el pseudo-elemento "before" de los enlaces dentro de la etiqueta nav */
     nav a::before {
         content: "";
         position: absolute;
@@ -244,11 +250,13 @@
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
     }
-    
+    /* Estilo al pasar el ratón sobre los enlaces dentro de la etiqueta nav */
+    nav a:hover {
     nav a:hover {
         color: #FDD835;
     }
-    
+}
+    /* Estilo al pasar el ratón sobre el pseudo-elemento "before" de los enlaces dentro de la etiqueta nav */
     nav a:hover::before {
         visibility: visible;
         transform: scaleX(1);
@@ -256,7 +264,7 @@
   
     /* Estilos para el footer */
 
-
+    /* Estilos para el encabezado h2 dentro del elemento con ID "catalogo" */
     #catalogo h2{
         text-align: center;
     }
@@ -382,13 +390,14 @@
         border-top: 1px solid rgb(27, 27, 33);
         font-size: 12px;
     }
-
+    /*Estilo para enlaces dentro de la clase "explora" dentro de la clase "pie-pagina" */
     .pie-pagina .explora a:hover{
         color: #fff;
     }
 
 
 /* PANELES SOLARES*/
+/* Estilos para el contenedor con la clase "container" */
 .container{
     width: 100%;
     display: flex;
@@ -397,7 +406,7 @@
     padding-bottom: 33px;
     
 }
-
+/* Estilos para el elemento con la clase "panel-solar" */
 .panel-solar{
     width: 100%;
     margin: 20px;
@@ -408,33 +417,33 @@
     cursor: default;
     transition: all 400ms ease;
 }
-
+/* Estilos al pasar el ratón sobre el elemento con la clase "panel-solar" */
 .panel-solar:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
-
+/* Estilos para las imágenes dentro del elemento con la clase "panel-solar" */
 .panel-solar img{
     width: 78%;
     height: 250px;
 }
-
+/* Estilos para el contenido dentro del elemento con la clase "panel-solar" */
 .panel-solar .contenido {
     padding: 15px;
     text-align: center
     ;
 }
-
+/* Estilos para los párrafos dentro del contenido del elemento con la clase "panel-solar" */
 .panel-solar .contenido p{
 line-height: 1.5;
 columns: #6a6a6a;
 }
-
+/* Estilos para los encabezados h3 dentro del contenido del elemento con la clase "panel-solar" */
 .panel-solar .contenido h3{
     font-weight: 400;
     margin-bottom: 15px;
 }
-
+/* Estilos para los enlaces dentro del contenido del elemento con la clase "panel-solar" */
 .panel-solar .contenido a{
     text-decoration: none;
     display: inline-block;
@@ -445,13 +454,14 @@ columns: #6a6a6a;
     border-radius: 4px;
     transform: all 400ms ease;
 }
-
+/* Estilos al pasar el ratón sobre los enlaces dentro del contenido del elemento con la clase "panel-solar" */
 .panel-solar .contenido a:hover{
     background-color: #2fb4cc;
     color: #fff;
 }
 
 /* VENTAJAS*/
+/* Estilos para el contenedor */
 .contenedor{
     width: 100%;
     max-width: 100%;
@@ -459,7 +469,7 @@ columns: #6a6a6a;
     display: flex;
     max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
 }
-
+/* Estilos para el elemento con la clase "ventajas" */
 .ventajas{
     width: 100%;
     overflow: hidden;
@@ -468,51 +478,50 @@ columns: #6a6a6a;
     cursor: default;
     max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
 }
-
+/* Estilos para los párrafos dentro del contenido del elemento con la clase "ventajas" */
 .ventajas .contenidos p{
     line-height: 1.5;
     color: #9e9e9e;
-    padding-left: 30px;
-    padding-right: 30px
-
-
-}
-
+    margin-left: 30px;
+    }
+/* Estilos para el elemento con la clase "ventaja" */
 .ventaja{
     width: 100%;
     background-color: black;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     overflow: hidden;
 }
-
+/* Estilos para los encabezados h3 dentro del contenido del elemento con la clase "ventajas" */
 .ventajas .contenidos h3{
     color: #fff;
     font-weight: 900;
     text-align: left;
     padding-left: 30px;
 }
-
+/* Estilos para las imágenes dentro del elemento con la clase "ventajas" */
 .ventajas img{
     margin: 40px 100px;
     max-width: 25%;
     
 }
+/* Estilos para el contenedor */
 .container{
     background-color: #000000;
 }
 /*MAPA*/
+/* Estilos para el mapa */
 .map-canvas {
     width: 100%;
     height: 510px;
     border-style: 0;
 
 }
+/* Estilos para el elemento con la clase "contacto" */
 .contacto{
     height: 1050px;
 }
 
-
-
+/* Estilos para la información dentro del elemento con la clase "contacto" */
 .contacto .informacion{
     padding-top: 60px; /* Ajusta el espacio superior */
     background-color: #FDD835;
@@ -521,6 +530,7 @@ columns: #6a6a6a;
     position: relative; /* Necesario para posicionar la línea correctamente */
 
 }
+/* Estilos para los párrafos dentro de la información del elemento con la clase "contacto" */
 .contacto .informacion p{
     margin-left: 200px;
     font-size: 20px;
@@ -529,8 +539,8 @@ columns: #6a6a6a;
     font-family: 'Abel', sans-serif;
 
 }
-
-.contacto .informacion h2{
+/* Estilos para el encabezado h1 dentro de la información del elemento con la clase "contacto" */
+.contacto .informacion h1{
     font-size: 40px;
     margin-left: 200px;
     font-family: 'Abel', sans-serif;
