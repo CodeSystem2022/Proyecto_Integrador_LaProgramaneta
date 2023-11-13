@@ -265,7 +265,7 @@ columns: #6a6a6a;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #040404c2;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
@@ -279,9 +279,9 @@ columns: #6a6a6a;
 
 .ventaja{
     width: 100%;
-    overflow: hidden;
     background-color: black;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
 }
 
 .ventajas .contenidos h3{
@@ -295,4 +295,54 @@ columns: #6a6a6a;
     margin: 40px 100px;
     max-width: 25%;
     
+}
+.container{
+    background-color: #000000;
+}
+/*MAPA*/
+.map-canvas {
+    width: 100%;
+    height: 510px;
+    border-style: 0;
+
+}
+.contacto{
+    height: 1050px;
+}
+
+
+
+.contacto .informacion{
+    padding-top: 60px; /* Ajusta el espacio superior */
+    background-color: #FDD835;
+    height: 400px;
+    padding-top: 30px; /* Ajusta el espacio superior */
+    position: relative; /* Necesario para posicionar la línea correctamente */
+
+}
+.contacto .informacion p{
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 22px;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.contacto .informacion h1{
+    font-size: 40px;
+    margin-left: 200px;
+    font-family: 'Abel', sans-serif;
+
+}
+/* Agrega la línea horizontal negra */
+.contacto .informacion::after {
+    content: ""; /* Añade un elemento pseudo ::after */
+    position: absolute; /* Posiciona de forma absoluta con respecto al contenedor padre */
+    left: 0;
+    bottom: 50px; /* Ajusta la distancia desde el borde inferior */
+    width: calc(100% - 400px); /* Ajusta la longitud de la línea (ancho total menos el margen izquierdo) */
+    height: 1px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+    margin-left: 200px; /* Ajusta el margen izquierdo para coincidir con el texto */
 }
