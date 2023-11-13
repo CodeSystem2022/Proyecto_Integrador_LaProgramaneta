@@ -60,14 +60,13 @@
 }
     
         /* foto de Logo*/
-    .logo img {
-            width: auto;
-            max-width:160px;
+        .logo img {
+            width: 7%;
             height: auto;
             position: fixed;
-            bottom: 81%; 
-            left: 5%; 
-    }
+            left: 8%;
+            top: -1%;
+        }
         
     /* IMAGEN DE FONDO */
 
@@ -146,18 +145,6 @@
     .p16 {
         font-size: 16px !important;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     nav ul {
         list-style: none;
@@ -282,20 +269,21 @@
     /*Ajustando el icono de whatsapp de la pagina*/
     .float {
         position: fixed;
-        width: 32px;
-        height: 32px;
+        width: 44px;
+        height: 44px;
         bottom: 16px;
         right: 16px;
         background-color: #09ce13;
         color: #fff;
         border-radius: 50%;
         text-align: center;
-        font-size: 22px;
+        font-size: 28px;
         box-shadow: 2px 2px 3px #999;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        z-index: 1;
     }
     /*Pie de pagina*/
     .pie-pagina{
@@ -407,6 +395,8 @@
     width: 100%;
     display: flex;
     max-width: 100%;
+    padding-top: 33px;
+    padding-bottom: 33px;
     
 }
 
@@ -568,4 +558,15 @@ columns: #6a6a6a;
 
 .foquwu {
     margin-bottom: -15px !important;
+}
+
+.txt {
+    font-family: 'Montserrat';
+    position: absolute;
+    display: flex;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 40%;
 }
