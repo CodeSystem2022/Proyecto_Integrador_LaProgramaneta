@@ -14,7 +14,7 @@
     header {
         color: #fff;
         text-align: center;
-        padding: 50;
+        padding: 25;
         transition: background-color 0.5s ease;
         text-align: center;
     }
@@ -70,8 +70,13 @@
     }
         
     /* IMAGEN DE FONDO */
-    #inicio .principal {
-        background-image: url(/Proyecto/Frontend/Imagenes/header.jpg);
+
+    .containers h1,p{
+        color: #fff;
+        margin-bottom: 20px
+    }
+    #inicio .row {
+        background-image: url(/Proyecto/Frontend/Imagenes/header.png);
         background-size: cover;
         background-repeat: no-repeat;
         color: #000000;
@@ -79,7 +84,73 @@
         min-height: 100vh;
         max-width: 1600px;
         margin: 0 auto;
+        
     }
+
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        height: 30%;
+    }
+    .col-md-5 {
+        height: 100%; /* Puedes ajustar el valor según tus necesidades */
+    }
+
+    .containers{
+        max-width: auto;
+    }
+
+    .col-md-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .amarillo {
+        color: #FCEC2A;
+    }
+    
+    .p24 {
+        font-size: 24px !important;
+    }
+    .p300 {
+        font-weight: 300 !important;
+    }
+    .roboto {
+        font-family: 'Roboto Condensed', sans-serif !important;
+    }
+    .p92 {
+        font-size: 50px !important;
+    }
+    
+    .p300 {
+        font-weight: 200 !important;
+    }
+    .roboto {
+        font-family: 'Roboto Condensed', sans-serif !important;
+    }
+    p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .p16 {
+        font-size: 16px !important;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -122,10 +193,13 @@
         text-align: center;
     }
 
-    section {
+    
+    .section  .menu{
         margin: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       
+        
     }
 
     .panel-solar {
