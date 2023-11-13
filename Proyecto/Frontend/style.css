@@ -9,13 +9,66 @@
         flex-direction: column;
     }
 
+    /* ENCABEZADO */
 
     header {
-        background-color: #007BFF;
         color: #fff;
         text-align: center;
-        padding: 20px;
+        padding: 50;
+        transition: background-color 0.5s ease;
+        text-align: center;
     }
+
+    
+    .fondo-inicial {
+        background-color: #000000; 
+        padding: 80px;
+      }
+      
+      .fondo-scroll {
+        background-color: hsla(0, 0%, 28%, 0.5); 
+      }
+      
+      
+    .top {
+            background-color: hsla(0, 0%, 46%, 0.5);
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            padding: 30px 0px;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+    }
+    .top a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 2em;
+            line-height: 70px;
+            display: block;
+            font-family: 'Exo 2', sans-serif;
+    }
+    
+    
+        /* foto de Logo*/
+    .logo img {
+            width: auto;
+            max-width:225px;
+            height: auto;
+            position: fixed;
+            bottom: 530px; 
+            left: 5%; 
+    }
+        
+
+
+
+
+
+
+
+
 
     nav ul {
         list-style: none;
