@@ -17,8 +17,5 @@ Grupo **La Programaneta** de la **UTN FRSR** San Rafael.
 
 👨‍🦰 [Benjamin Bellido](https://github.com/benjaminbellido)
 
-👨‍🦰 [Matias Haller](https://github.com/matihaller)
-
-
 
 ##
