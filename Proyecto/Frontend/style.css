@@ -59,7 +59,7 @@ h1 {
     nav li {
         margin: 0 15px;
     }
-    #inicio {
+    .nav #inicio {
         margin: 20px;
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -187,7 +187,8 @@ h1 {
     /*Pie de pagina*/
     .pie-pagina{
         width: 100%;
-        background-color: rgb(20, 20, 20);
+        background-color: rgb(20, 20, 20);  
+        
     }
     /*Separando en columnas y ajustando los contenedores del grupo 1*/
     .pie-pagina .grupo-1{
@@ -198,12 +199,14 @@ h1 {
         grid-gap: 20px;
         padding: 25px;
         color: #fff;
+        height: 230px;
     }
     /*Logotipo LAPROGRAMANETA PIE DE PAGINA*/
     .pie-pagina .grupo-1  figure img {
-        width: 50%; /* Ajusta el ancho al 100% del contenedor (figure) */
+        width: 60%; /* Ajusta el ancho al 100% del contenedor (figure) */
         margin-left: 0; 
         height: auto; /* Mantiene la proporción original de la imagen ajustando automáticamente la altura */
+
     }
     /*Logotipo LAPROGRAMANETA PIE DE PAGINA*/
     .pie-pagina .grupo-1  figure{
@@ -245,33 +248,19 @@ h1 {
     /*Inicio y catalogo del pie de pagina*/
     .pie-pagina .explora a{
         text-decoration: none;
-
-
-        color: #979797;
-        margin-left: 110px;
-
         color: #717171;
-        margin-left: 128px;
-
-
-        color: #717171;
-        margin-left: 128px;
-
+        margin-left: 141px;
         display: flex;
         flex-direction: column; /* Alinea los elementos verticalmente */
         line-height: 1.5;        
         font-size: 14px;
         transition: all 300ms ease;
 
-
     }
     /*Animacion cursor sobre inicio y catalogo*/
     .pie-pagina .explora a:hover{
         color: #fff;
-
-
     }
-
 
     /*Titulo sobre-nosotros pipe de pagina*/
     .pie-pagina .grupo-1 .box .sobre-nosotros{
@@ -282,13 +271,6 @@ h1 {
     /*Ajustando el interlineado de la descripcion del pie de pagina*/
     .sobre-nosotros p {
         line-height: 2; 
-
-
-        color:#979797;
-
-        color: #717171;
-
-
         color: #717171;
 
     }
@@ -380,7 +362,7 @@ columns: #6a6a6a;
 .ventajas{
     width: 100%;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #040404c2;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     max-width: calc(100% - 40px); /* Ajustar el ancho teniendo en cuenta los márgenes */
@@ -397,9 +379,9 @@ columns: #6a6a6a;
 
 .ventaja{
     width: 100%;
-    overflow: hidden;
     background-color: black;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
 }
 
 .ventajas .contenidos h3{
@@ -410,8 +392,59 @@ columns: #6a6a6a;
 }
 
 .ventajas img{
-    margin: 40px 130px;
+    margin: 40px 100px;
     max-width: 25%;
+    
+}
+.container{
+    background-color: #000000;
+}
+/*MAPA*/
+.map-canvas {
+    width: 100%;
+    height: 510px;
+    border-style: 0;
+
+}
+.contacto{
+    height: 1050px;
+}
+
+
+
+.contacto .informacion{
+    padding-top: 60px; /* Ajusta el espacio superior */
+    background-color: #FDD835;
+    height: 400px;
+    padding-top: 30px; /* Ajusta el espacio superior */
+    position: relative; /* Necesario para posicionar la línea correctamente */
+
+}
+.contacto .informacion p{
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 22px;
+    font-family: 'Abel', sans-serif;
+
+}
+
+.contacto .informacion h2{
+    font-size: 40px;
+    margin-left: 200px;
+    font-family: 'Abel', sans-serif;
+
+}
+/* Agrega la línea horizontal negra */
+.contacto .informacion::after {
+    content: ""; /* Añade un elemento pseudo ::after */
+    position: absolute; /* Posiciona de forma absoluta con respecto al contenedor padre */
+    left: 0;
+    bottom: 50px; /* Ajusta la distancia desde el borde inferior */
+    width: calc(100% - 400px); /* Ajusta la longitud de la línea (ancho total menos el margen izquierdo) */
+    height: 1px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+    margin-left: 200px; /* Ajusta el margen izquierdo para coincidir con el texto */
 }
 
 .ventajas-container {
