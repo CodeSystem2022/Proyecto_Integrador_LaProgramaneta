@@ -18,17 +18,12 @@
         transition: background-color 0.5s ease;
         text-align: center;
     }
-    to {
-        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
-    }
-
+  
     .fondo-inicial {
         background-color: transparent;
       }
       
-    .fondo-scroll {
-        background-color: black;    
-    }
+  
 
     /* Estilo para la barra superior fija (top) */
     .top {
@@ -40,7 +35,7 @@
         left: 0px;
         padding: 45px;
         z-index: 1000;
-        display: flex;
+        display: flex;  
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
     }
@@ -526,7 +521,6 @@ columns: #6a6a6a;
     padding-top: 60px; /* Ajusta el espacio superior */
     background-color: #FDD835;
     height: 400px;
-    padding-top: 30px; /* Ajusta el espacio superior */
     position: relative; /* Necesario para posicionar la línea correctamente */
 
 }
@@ -540,7 +534,7 @@ columns: #6a6a6a;
 
 }
 /* Estilos para el encabezado h1 dentro de la información del elemento con la clase "contacto" */
-.contacto .informacion h1{
+.contacto .informacion h2{
     font-size: 40px;
     margin-left: 200px;
     font-family: 'Abel', sans-serif;
